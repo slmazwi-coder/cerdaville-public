@@ -1,0 +1,7 @@
+{
+  "name": "Mount Currie Senior Secondary School",
+  "description": "Mount Currie SSS is a public secondary school located in Kokstad, Harry Gwala District, KwaZulu-Natal.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
