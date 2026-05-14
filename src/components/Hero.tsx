@@ -3,10 +3,11 @@ import { AnimatePresence, motion } from 'motion/react';
 import { ChevronLeft, ChevronRight, Image as ImageIcon } from 'lucide-react';
 
 const slides = [
-  { url: '/assets/hero/hero1.jpg', caption: 'Striving for Excellence in All We Do' },
-  { url: '/assets/hero/hero2.jpg', caption: 'Quality Education in Kokstad' },
-  { url: '/assets/hero/hero3.jpg', caption: 'Dedicated Staff & Community' },
-  { url: '/assets/hero/hero4.jpg', caption: 'In the Shadow of Mount Currie' },
+  { url: '/assets/hero/mchero1.png', caption: 'Striving for Excellence in All We Do' },
+  { url: '/assets/hero/mchero2.png', caption: 'Quality Education in Kokstad' },
+  { url: '/assets/hero/mchero4.png', caption: 'Dedicated Staff & Community' },
+  { url: '/assets/hero/mchero5.png', caption: 'In the Shadow of Mount Currie' },
+  { url: '/assets/hero/mchero6.png', caption: 'Our Vibrant School Life' },
 ];
 
 export const Hero = () => {
@@ -76,9 +77,11 @@ export const Hero = () => {
           transition={{ duration: 0.4, ease: 'easeOut', delay: 0.05 }}
           className="mb-4"
         >
-          <div className="h-24 w-24 mx-auto rounded-full border-4 border-[#C9A84C] shadow-2xl bg-gradient-to-br from-[#C9A84C] to-[#F0D080] flex items-center justify-center text-[#0D2137] font-bold text-3xl font-serif">
-            MC
-          </div>
+          <img
+            src="/assets/logo/mclogo.png"
+            alt="Mount Currie SSS Logo"
+            className="h-24 w-24 mx-auto rounded-full border-4 border-[#C9A84C] shadow-2xl object-contain bg-white"
+          />
         </motion.div>
         <motion.h1
           initial={{ opacity: 0, y: 10 }}

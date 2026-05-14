@@ -11,9 +11,11 @@ export const Footer = () => {
           {/* Col 1 — Logo + Name */}
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-3 mb-3">
-              <div className="h-12 w-12 shrink-0 rounded-xl bg-gradient-to-br from-[#C9A84C] to-[#F0D080] flex items-center justify-center border border-white/20 shadow-lg text-[#0D2137] font-bold text-xl font-serif">
-                MC
-              </div>
+              <img
+                src="/assets/logo/mclogo.png"
+                alt="Mount Currie SSS Logo"
+                className="h-12 w-12 shrink-0 rounded-xl border border-white/20 shadow-lg object-contain bg-white"
+              />
               <div>
                 <h3 className="text-base font-bold leading-tight">Mount Currie Senior Secondary School</h3>
                 <p className="text-sm italic mt-0.5" style={{ color: '#C9A84C' }}>"Striving for Excellence in All We Do"</p>

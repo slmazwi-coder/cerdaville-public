@@ -39,7 +39,7 @@ export const About = () => {
           >
             {!campusFailed ? (
               <img
-                src="/assets/about/school_building.png"
+                src="/assets/about/mccamups.png"
                 alt="Mount Currie SSS campus"
                 className="w-full h-full object-cover"
                 onError={() => setCampusFailed(true)}

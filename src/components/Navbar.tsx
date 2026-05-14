@@ -26,9 +26,11 @@ export const Navbar = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <Link to="/" className="flex items-center gap-3 min-w-0 flex-1">
-              <div className="h-11 w-11 shrink-0 rounded-xl bg-gradient-to-br from-[#C9A84C] to-[#F0D080] flex items-center justify-center border border-[#C9A84C]/30 shadow-md text-[#0D2137] font-bold text-lg font-serif">
-                MC
-              </div>
+              <img
+                src="/assets/logo/mclogo.png"
+                alt="Mount Currie SSS Logo"
+                className="h-11 w-11 shrink-0 rounded-xl border border-[#C9A84C]/30 shadow-md object-contain bg-white"
+              />
               <div className="min-w-0">
                 <span className="md:hidden text-sm font-bold text-school-blue block leading-tight">Mount Currie SSS</span>
                 <span className="hidden md:block text-base font-bold text-school-blue leading-tight">Mount Currie Senior Secondary School</span>
