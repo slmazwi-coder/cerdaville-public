@@ -27,14 +27,14 @@ export const Navbar = () => {
           <div className="flex items-center justify-between h-16">
             <Link to="/" className="flex items-center gap-3 min-w-0 flex-1">
               <img
-                src="/assets/logo/mclogo.png"
-                alt="Mount Currie SSS Logo"
-                className="h-11 w-11 shrink-0 rounded-xl border border-[#C9A84C]/30 shadow-md object-contain bg-white"
+                src="/assets/logo/cedarville-logo.svg"
+                alt="Cedarville Public School Logo"
+                className="h-11 w-11 shrink-0 rounded-xl border border-school-teal/30 shadow-md object-contain bg-white"
               />
               <div className="min-w-0">
-                <span className="md:hidden text-sm font-bold text-school-blue block leading-tight">Mount Currie SSS</span>
-                <span className="hidden md:block text-base font-bold text-school-blue leading-tight">Mount Currie Senior Secondary School</span>
-                <span className="text-xs font-semibold tracking-wide uppercase" style={{color:'#C9A84C'}}>Striving for Excellence</span>
+                <span className="md:hidden text-sm font-bold text-school-blue block leading-tight">Cedarville Public</span>
+                <span className="hidden md:block text-base font-bold text-school-blue leading-tight">Cedarville Public School</span>
+                <span className="text-xs font-semibold tracking-wide uppercase" style={{color:'#0A9396'}}>Enter to Learn, Leave to Serve</span>
               </div>
             </Link>
             <div className="hidden md:flex items-center gap-3 shrink-0">
@@ -54,7 +54,7 @@ export const Navbar = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-center flex-wrap gap-x-1 gap-y-0 py-1">
             {navLinks.map((link) => (
-              <Link key={link.path} to={link.path} className={cn('px-3 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap', location.pathname === link.path ? 'text-school-blue bg-blue-50 font-semibold' : 'text-gray-600 hover:text-school-blue hover:bg-gray-50')}>
+              <Link key={link.path} to={link.path} className={cn('px-3 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap', location.pathname === link.path ? 'text-white bg-school-teal font-semibold' : 'text-gray-600 hover:text-school-teal hover:bg-gray-50')}>
                 {link.name}
               </Link>
             ))}
@@ -65,7 +65,7 @@ export const Navbar = () => {
         <div className="md:hidden bg-white border-t border-gray-100 shadow-lg">
           <div className="px-3 pt-2 pb-4 space-y-1">
             {navLinks.map((link) => (
-              <Link key={link.path} to={link.path} onClick={() => setIsOpen(false)} className={cn('flex items-center px-4 py-3 rounded-lg text-sm font-medium transition-colors', location.pathname === link.path ? 'text-school-blue bg-blue-50 font-semibold' : 'text-gray-700 hover:text-school-blue hover:bg-gray-50')}>
+              <Link key={link.path} to={link.path} onClick={() => setIsOpen(false)} className={cn('flex items-center px-4 py-3 rounded-lg text-sm font-medium transition-colors', location.pathname === link.path ? 'text-white bg-school-teal font-semibold' : 'text-gray-700 hover:text-school-teal hover:bg-gray-50')}>
                 {link.name}
               </Link>
             ))}

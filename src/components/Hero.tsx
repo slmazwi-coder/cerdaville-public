@@ -3,11 +3,11 @@ import { AnimatePresence, motion } from 'motion/react';
 import { ChevronLeft, ChevronRight, Image as ImageIcon } from 'lucide-react';
 
 const slides = [
-  { url: '/assets/hero/mchero1.png', caption: 'Striving for Excellence in All We Do' },
-  { url: '/assets/hero/mchero2.png', caption: 'Quality Education in Kokstad' },
-  { url: '/assets/hero/mchero4.png', caption: 'Dedicated Staff & Community' },
-  { url: '/assets/hero/mchero5.png', caption: 'In the Shadow of Mount Currie' },
-  { url: '/assets/hero/mchero6.png', caption: 'Our Vibrant School Life' },
+  { url: '/assets/hero/cedarville1.png', caption: 'Enter to Learn, Leave to Serve' },
+  { url: '/assets/hero/cedarville2.png', caption: 'Quality Education in Cedarville' },
+  { url: '/assets/hero/cedarville3.png', caption: 'Dedicated Staff & Community' },
+  { url: '/assets/hero/cedarville4.png', caption: 'Serving the Mzingisi Community' },
+  { url: '/assets/hero/cedarville5.png', caption: 'Our Vibrant School Life' },
 ];
 
 export const Hero = () => {
@@ -28,7 +28,7 @@ export const Hero = () => {
   const showImage = !!slide.url && !failed[currentIndex];
 
   return (
-    <div className="relative h-[650px] w-full overflow-hidden bg-school-blue">
+    <div className="relative h-[650px] w-full overflow-hidden bg-school-navy">
       <AnimatePresence mode="wait">
         <motion.div
           key={currentIndex}
@@ -46,7 +46,7 @@ export const Hero = () => {
               onError={() => setFailed((p) => ({ ...p, [currentIndex]: true }))}
             />
           ) : (
-            <div className="h-full w-full bg-gradient-to-br from-[#0D2137] via-[#1A5276] to-[#2E86AB] opacity-95 flex items-center justify-center">
+            <div className="h-full w-full bg-gradient-to-br from-[#0F1A2E] via-[#1B2A4A] to-[#0A9396] opacity-95 flex items-center justify-center">
               <div className="text-center text-white/70 px-6">
                 <div className="mx-auto mb-3 w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center border border-white/15">
                   <ImageIcon />
@@ -78,9 +78,9 @@ export const Hero = () => {
           className="mb-4"
         >
           <img
-            src="/assets/logo/mclogo.png"
-            alt="Mount Currie SSS Logo"
-            className="h-24 w-24 mx-auto rounded-full border-4 border-[#C9A84C] shadow-2xl object-contain bg-white"
+            src="/assets/logo/cedarville-logo.svg"
+            alt="Cedarville Public School Logo"
+            className="h-24 w-24 mx-auto rounded-full border-4 border-school-teal shadow-2xl object-contain bg-white"
           />
         </motion.div>
         <motion.h1
@@ -89,16 +89,16 @@ export const Hero = () => {
           transition={{ duration: 0.4, ease: 'easeOut', delay: 0.1 }}
           className="text-4xl md:text-6xl font-bold mb-2 uppercase"
         >
-          Mount Currie SSS
+          Cedarville Public School
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, ease: 'easeOut', delay: 0.15 }}
           className="text-lg md:text-2xl font-light italic"
-          style={{ color: '#C9A84C' }}
+          style={{ color: '#0A9396' }}
         >
-          "Striving for Excellence in All We Do"
+          "Enter to Learn, Leave to Serve"
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 10 }}
@@ -106,8 +106,8 @@ export const Hero = () => {
           transition={{ duration: 0.4, ease: 'easeOut', delay: 0.2 }}
           className="mt-8 flex gap-4"
         >
-          <a href="/admissions" className="btn-primary bg-white text-school-blue hover:bg-gray-100">Admissions</a>
-          <a href="/about" className="btn-primary border-2 border-white bg-transparent hover:bg-white/10">Learn More</a>
+          <a href="/admissions" className="btn-primary bg-school-teal text-white px-6 py-3 rounded-lg font-semibold hover:bg-school-blue transition-colors">Admissions</a>
+          <a href="/about" className="border-2 border-white bg-transparent hover:bg-white/10 px-6 py-3 rounded-lg font-semibold transition-colors">Learn More</a>
         </motion.div>
       </div>
 
@@ -120,7 +120,7 @@ export const Hero = () => {
 
       <div className="absolute bottom-6 left-0 right-0 flex justify-center gap-2 z-20">
         {slides.map((_, i) => (
-          <button key={i} onClick={() => setCurrentIndex(i)} className={`w-2.5 h-2.5 rounded-full transition-all ${i === currentIndex ? 'bg-[#C9A84C] scale-125' : 'bg-white/40 hover:bg-white/60'}`} aria-label={`Go to slide ${i + 1}`} />
+          <button key={i} onClick={() => setCurrentIndex(i)} className={`w-2.5 h-2.5 rounded-full transition-all ${i === currentIndex ? 'bg-school-teal scale-125' : 'bg-white/40 hover:bg-white/60'}`} aria-label={`Go to slide ${i + 1}`} />
         ))}
       </div>
     </div>

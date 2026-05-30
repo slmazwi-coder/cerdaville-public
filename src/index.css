@@ -1,13 +1,12 @@
 @import "tailwindcss";
 
 @theme {
-  --color-school-blue: #1A5276;
-  --color-school-gold: #C9A84C;
-  --color-school-navy: #0D2137;
-  --color-school-mid-blue: #2E86AB;
-  --color-school-light-blue: #7EC8E3;
-  --color-school-white: #ffffff;
-  --font-sans: "Lora", ui-serif, Georgia, serif;
+  --color-school-blue: #1B2A4A;
+  --color-school-teal: #0A9396;
+  --color-school-gold: #E8C547;
+  --color-school-light: #E5F4F1;
+  --color-school-dark: #0F1A2E;
+  --color-school-navy: #1B2A4A;
 }
 
 @layer base {
@@ -34,7 +33,7 @@
 }
 
 .btn-primary {
-  @apply bg-school-blue text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#133d58] transition-colors;
+  @apply bg-school-blue text-white px-6 py-2 rounded-lg font-semibold hover:bg-school-teal transition-colors;
 }
 
 .section-title {

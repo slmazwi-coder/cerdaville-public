@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="48" fill="#1B2A4A" stroke="#0A9396" stroke-width="3"/>
+  <text x="50" y="42" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0A9396" text-anchor="middle">CEDARVILLE</text>
+  <text x="50" y="56" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">PUBLIC</text>
+  <text x="50" y="68" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">SCHOOL</text>
+  <path d="M 25 75 Q 50 85 75 75" stroke="#E8C547" stroke-width="2" fill="none"/>
+</svg>

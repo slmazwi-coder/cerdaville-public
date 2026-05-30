@@ -107,7 +107,7 @@ export const Admissions = () => {
   const [learner, setL] = useState({
     surname: '', firstName: '', initials: '', otherNames: '',
     dob: '', gender: '', identificationNumber: '', citizenship: '', race: '',
-    grade: '', year: '2026',
+    grade: '', year: '2027',
     highestGradePassed: '', yearWhenGradeWasPassed: '', accessionNo: '',
     countryOfResidence: '', province: '', physicalAddress: '', citySuburb: '', postalCode: '',
     homeLanguage: '', preferredLanguageOfInstruction: '',
@@ -273,7 +273,7 @@ export const Admissions = () => {
           </div>
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Application Submitted!</h2>
           <p className="text-gray-600 mb-8">
-            Thank you for applying to Mount Currie Agricultural High School. We have received your application and will be in contact shortly.
+            Thank you for applying to Cedarville Public School. We have received your application and will be in contact shortly.
           </p>
           <a href="/" className="btn-primary w-full inline-block">Back to Home</a>
         </motion.div>
@@ -296,11 +296,11 @@ export const Admissions = () => {
               <div>
                 <h2 className="text-2xl font-bold">Application for Admission to School</h2>
                 <p className="text-white/70 text-sm mt-1">
-                  Mount Currie Agricultural High School &nbsp;·&nbsp; Kokstad, KwaZulu-Natal, Eastern Cape 4730
+                  Cedarville Public School &nbsp;·&nbsp; No. 7 Mzingisi, Cedarville, 4720
                 </p>
               </div>
               <div className="text-right text-sm text-white/70">
-                <div>Tel: 039 727 3662</div>
+                <div>Tel: 073 200 3457</div>
                 <div>Step {step} of 3</div>
               </div>
             </div>
@@ -344,13 +344,13 @@ export const Admissions = () => {
                         <Field label="Grade Applied For" required>
                           <select className={sel} value={learner.grade} onChange={e => patchL('grade', e.target.value)}>
                             <option value="">Select grade</option>
-                            {['8','9','10','11','12'].map(g => <option key={g} value={g}>Grade {g}</option>)}
+                            {['R','1','2','3','4','5','6','7','8','9','10','11','12'].map(g => <option key={g} value={g}>Grade {g}</option>)}
                           </select>
                         </Field>
 
                         <Field label="Year">
                           <select className={sel} value={learner.year} onChange={e => patchL('year', e.target.value)}>
-                            {['2025','2026','2026','2028'].map(y => <option key={y}>{y}</option>)}
+                            {['2026','2027','2028','2029'].map(y => <option key={y}>{y}</option>)}
                           </select>
                         </Field>
 
