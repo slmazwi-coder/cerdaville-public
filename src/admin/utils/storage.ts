@@ -282,10 +282,10 @@ export function calculateAverageMark(subjectMarks: SubjectMark[]): number {
 const defaultNews: NewsItem[] = [
   {
     id: '1',
-    title: '2026 Admissions Open',
+    title: '2027 Admissions Open',
     date: 'Now open',
     content:
-      'Applications for the 2026 academic year at Mount Currie SSS are now open. Grades 8–12. Apply online or contact the school office.',
+      'Applications for the 2027 academic year at Cedarville Public School are now open. Grade R to Grade 12. Apply online or contact the school office.',
     image: '',
   },
 ];
@@ -302,11 +302,11 @@ export const setApplications = (items: Application[]) => setItems('admin_applica
 
 // Contact
 const defaultContact: ContactInfo = {
-  address: '4 School Lane, Kokstad, 4700, KwaZulu-Natal',
-  phone: '039 727 3662',
-  email: 'mcsss@telkomsa.net',
-  monThu: '08:00 - 14:30',
-  friday: '08:00 - 14:30',
+  address: 'No. 7 Mzingisi Location, Cedarville, 4720, Eastern Cape',
+  phone: '073 200 3457',
+  email: 'info@cedarvillepublic.co.za',
+  monThu: '07:30 - 14:30',
+  friday: '07:30 - 14:30',
   weekend: 'Closed',
 };
 export const getContact = () => getObject<ContactInfo>('admin_contact', defaultContact);
@@ -315,15 +315,15 @@ export const setContact = (info: ContactInfo) => setObject('admin_contact', info
 // About
 const defaultAbout: AboutInfo = {
   historyParagraphs: [
-    'Mount Currie Senior Secondary School is a Section 21, Quintile 4 public school in Kokstad, KwaZulu-Natal.',
-    'Named after the majestic Mount Currie mountain, the school serves 921 learners with 33 dedicated educators across Grades 8–12.',
+    'Cedarville Public School is a No-Fee Public School in Cedarville, Alfred Nzo District, Eastern Cape.',
+    'The school serves learners from the Mzingisi community and surrounding areas, providing quality education from Grade R to Grade 12.',
     'Parents and guardians are encouraged to engage with the school through meetings, events, and ongoing learner support.',
   ],
-  principalName: 'Mr. Solomon',
+  principalName: 'Principal',
   principalTitle: 'Principal',
   principalMessage: [
-    'Welcome to Mount Currie Senior Secondary School. We are committed to providing a safe, inclusive and stimulating environment that enables every learner to reach their full potential.',
-    'We value respect, integrity and ubuntu. Together we are striving for excellence in all we do.',
+    'Welcome to Cedarville Public School. We are committed to providing a safe, inclusive and stimulating environment that enables every learner to reach their full potential.',
+    'We value respect, integrity and ubuntu. Together we strive for excellence in all we do.',
   ],
 };
 export const getAbout = () => getObject<AboutInfo>('admin_about', defaultAbout);

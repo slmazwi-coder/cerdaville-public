@@ -62,7 +62,7 @@ export const Achievements = () => {
             <p className="text-white/60 mb-6">Improved from 63.2% in 2019</p>
             <div className="flex justify-center gap-2 flex-wrap">
               <span className="px-4 py-1.5 rounded-full bg-white/20 text-sm font-semibold">#StrivingForExcellence</span>
-              <span className="px-4 py-1.5 rounded-full bg-white/20 text-sm font-semibold">#MountCurrieSSS</span>
+              <span className="px-4 py-1.5 rounded-full bg-white/20 text-sm font-semibold">#CedarvillePublic</span>
             </div>
           </div>
         </motion.div>
