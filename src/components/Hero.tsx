@@ -3,11 +3,12 @@ import { AnimatePresence, motion } from 'motion/react';
 import { ChevronLeft, ChevronRight, Image as ImageIcon } from 'lucide-react';
 
 const slides = [
-  { url: '/assets/hero/cedarville1.png', caption: 'Enter to Learn, Leave to Serve' },
-  { url: '/assets/hero/cedarville2.png', caption: 'Quality Education in Cedarville' },
-  { url: '/assets/hero/cedarville3.png', caption: 'Dedicated Staff & Community' },
-  { url: '/assets/hero/cedarville4.png', caption: 'Serving the Mzingisi Community' },
-  { url: '/assets/hero/cedarville5.png', caption: 'Our Vibrant School Life' },
+  { url: '/assets/hero/FB_IMG_1780054221090.jpg', caption: 'Enter to Learn, Leave to Serve' },
+  { url: '/assets/hero/FB_IMG_1780054276428.jpg', caption: 'Quality Education in Cedarville' },
+  { url: '/assets/hero/FB_IMG_1780054283733.jpg', caption: 'Dedicated Staff & Community' },
+  { url: '/assets/hero/FB_IMG_1780054295372.jpg', caption: 'Serving the Mzingisi Community' },
+  { url: '/assets/hero/FB_IMG_1780054310849.jpg', caption: 'Our Vibrant School Life' },
+  { url: '/assets/hero/FB_IMG_1780054323832.jpg', caption: 'Building Tomorrow\'s Leaders' },
 ];
 
 export const Hero = () => {
@@ -78,7 +79,7 @@ export const Hero = () => {
           className="mb-4"
         >
           <img
-            src="/assets/logo/cedarville-logo.svg"
+            src="/assets/logo/FB_IMG_1780054238494.jpg"
             alt="Cedarville Public School Logo"
             className="h-24 w-24 mx-auto rounded-full border-4 border-school-teal shadow-2xl object-contain bg-white"
           />

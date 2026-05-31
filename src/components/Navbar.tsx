@@ -27,7 +27,7 @@ export const Navbar = () => {
           <div className="flex items-center justify-between h-16">
             <Link to="/" className="flex items-center gap-3 min-w-0 flex-1">
               <img
-                src="/assets/logo/cedarville-logo.svg"
+                src="/assets/logo/FB_IMG_1780054238494.jpg"
                 alt="Cedarville Public School Logo"
                 className="h-11 w-11 shrink-0 rounded-xl border border-school-teal/30 shadow-md object-contain bg-white"
               />
