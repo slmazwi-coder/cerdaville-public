@@ -134,7 +134,7 @@ async function translateText(text: string, src: SupportedLang, tgt: SupportedLan
 }
 
 // ── Claude AI (Anthropic) ────────────────────────────────────────────────────
-const SYSTEM_PROMPT = `You are a warm, knowledgeable and friendly assistant for Mount Currie Senior Secondary School in Kokstad, KwaZulu-Natal, South Africa.
+const SYSTEM_PROMPT = `You are a warm, knowledgeable and friendly assistant for Cedarville Public School in Cedarville, Eastern Cape, South Africa.
 
 You help parents, learners, guardians and community members with anything about the school:
 - Admissions and application process
@@ -148,17 +148,14 @@ You help parents, learners, guardians and community members with anything about 
 - General encouragement and guidance for parents and learners
 
 School details:
-- Name: Mount Currie Senior Secondary School
-- Location: 4 School Lane, Kokstad, 4700, KwaZulu-Natal
-- Phone: 039 727 3662
-- Email: mcsss@telkomsa.net
-- Motto: "Striving for Excellence in All We Do"
-- Principal: Mr. Solomon
-- Deputy Principal: Deputy Principal
-- School hours: Monday–Friday 08:00–14:30
-- Grades: Grade 8 to Grade 12
-- 2026 applications currently open
-- Matric pass rate: 72.6% (Class of 2020, up from 63.2% in 2019)
+- Name: Cedarville Public School
+- Location: No. 7 Mzingisi Location, Cedarville, 4720, Eastern Cape
+- Phone: 073 200 3457
+- Email: info@cedarvillepublic.co.za
+- Motto: "Enter to Learn, Leave to Serve"
+- School hours: Monday–Friday 07:30–14:30
+- Grades: Grade R to Grade 12
+- 2027 applications currently open
 
 Be warm, clear and concise. Always encourage. If you are unsure about something very specific, direct them to call or email the school.`;
 
@@ -194,7 +191,7 @@ async function askClaude(userMessage: string): Promise<string> {
     return text;
   } catch (err) {
     console.error('[Chatbot] Claude request failed:', err);
-    return 'I\'m having trouble connecting right now. Please contact the school directly at 039 727 3662.';
+    return 'I\'m having trouble connecting right now. Please contact the school directly at 073 200 3457.';
   }
 }
 
@@ -210,7 +207,7 @@ export function ChatbotWidget(props: { defaultOpen?: boolean }) {
       id: uid(),
       role: 'bot',
       createdAt: Date.now(),
-      text: "👋 Hello! Let me help you! Whether it's admissions, fees, results, activities or anything else about Mount Currie SSS — just ask and I'll be happy to assist.",
+      text: "👋 Hello! Let me help you! Whether it's admissions, fees, results, activities or anything else about Cedarville Public School — just ask and I'll be happy to assist.",
     },
   ]);
 
@@ -308,7 +305,7 @@ export function ChatbotWidget(props: { defaultOpen?: boolean }) {
         {
           id: uid(),
           role: 'bot',
-          text: 'Something went wrong. Please contact the school at 039 727 3662 or message us on Facebook: Mount Currie SSS.',
+          text: 'Something went wrong. Please contact the school at 073 200 3457 or message us on Facebook: Cedarville Public School.',
           createdAt: Date.now(),
         },
       ]);
@@ -347,7 +344,7 @@ export function ChatbotWidget(props: { defaultOpen?: boolean }) {
                 <Sparkles size={16} />
               </div>
               <div className="min-w-0">
-                <div className="font-bold text-sm leading-tight truncate">Mount Currie SSS Assistant</div>
+                <div className="font-bold text-sm leading-tight truncate">Cedarville Public Assistant</div>
                 <div className="flex items-center gap-1 text-[11px] text-white/70 mt-0.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-green-300 inline-block animate-pulse" />
                   Online · AI-powered

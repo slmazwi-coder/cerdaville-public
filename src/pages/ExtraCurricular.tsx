@@ -62,7 +62,7 @@ export const ExtraCurricular = () => {
         <h1 className="section-title text-center">Sports & Culture</h1>
 
         <p className="text-center text-xl text-gray-600 mb-16 max-w-3xl mx-auto">
-          At Mount Currie SSS, we believe in a holistic education. Our extra-curricular programs are designed to discover and nurture the diverse talents of our learners.
+          At Cedarville Public School, we believe in a holistic education. Our extra-curricular programs are designed to discover and nurture the diverse talents of our learners.
         </p>
 
         {/* Sports */}
